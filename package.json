@@ -1,0 +1,20 @@
+{
+  "name": "tdd-exercicios",
+  "version": "1.0.0",
+  "description": "Exercícios práticos de TDD - LAB V 5BD FATEC/SJC",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "coverage:ex1": "jest tests/triangulo.test.ts --coverage --collectCoverageFrom=src/exercicio1-triangulo/**/*.ts",
+    "coverage:ex2": "jest tests/personDAO.test.ts --coverage --collectCoverageFrom=src/exercicio2-person/**/*.ts",
+    "coverage:ex3": "jest tests/calculadoraSalario.test.ts --coverage --collectCoverageFrom=src/exercicio3-salario/**/*.ts"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.5.2",
+    "ts-jest": "^29.4.15",
+    "typescript": "^5.9.3"
+  }
+}
