@@ -1,0 +1,12 @@
+-----------------------|---------|----------|---------|---------|-------------------
+File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-----------------------|---------|----------|---------|---------|-------------------
+All files              |     100 |      100 |     100 |     100 |                   
+ calculadoraSalario.ts |     100 |      100 |     100 |     100 |                   
+ funcionario.ts        |     100 |      100 |     100 |     100 |                   
+-----------------------|---------|----------|---------|---------|-------------------
+Test Suites: 1 passed, 1 total
+Tests:       16 passed, 16 total
+Snapshots:   0 total
+Time:        0.802 s, estimated 1 s
+Ran all test suites matching tests/calculadoraSalario.test.ts.
