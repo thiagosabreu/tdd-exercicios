@@ -1,7 +1,7 @@
 export class Email {
   constructor(
     public id: number,
-    public name: string | null,
+    public name: string,
   ) {}
 }
 
@@ -10,7 +10,7 @@ export class Person {
 
   constructor(
     public id: number,
-    public name: string | null,
+    public name: string,
     public age: number,
   ) {}
 

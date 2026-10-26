@@ -7,22 +7,18 @@ describe('Triangulo', () => {
     triangulo = new Triangulo();
   });
 
-  // 2.1
   test('2.1 - triângulo escaleno válido', () => {
     expect(triangulo.classificar(3, 4, 5)).toBe(TipoTriangulo.ESCALENO);
   });
 
-  // 2.2
   test('2.2 - triângulo isósceles válido', () => {
     expect(triangulo.classificar(5, 5, 3)).toBe(TipoTriangulo.ISOSCELES);
   });
 
-  // 2.3
   test('2.3 - triângulo equilátero válido', () => {
     expect(triangulo.classificar(4, 4, 4)).toBe(TipoTriangulo.EQUILATERO);
   });
 
-  // 2.4
   test.each([
     [5, 5, 3],
     [5, 3, 5],
@@ -31,7 +27,6 @@ describe('Triangulo', () => {
     expect(triangulo.classificar(a, b, c)).toBe(TipoTriangulo.ISOSCELES);
   });
 
-  // 2.5
   test.each([
     [0, 4, 5],
     [3, 0, 5],
@@ -40,7 +35,6 @@ describe('Triangulo', () => {
     expect(triangulo.classificar(a, b, c)).toBe(TipoTriangulo.INVALIDO);
   });
 
-  // 2.6
   test.each([
     [-3, 4, 5],
     [3, -4, 5],
@@ -49,12 +43,10 @@ describe('Triangulo', () => {
     expect(triangulo.classificar(a, b, c)).toBe(TipoTriangulo.INVALIDO);
   });
 
-  // 2.7
   test('2.7 - soma de 2 lados igual ao terceiro', () => {
     expect(triangulo.classificar(1, 2, 3)).toBe(TipoTriangulo.INVALIDO);
   });
 
-  // 2.8
   test.each([
     [1, 2, 3],
     [1, 3, 2],
@@ -66,12 +58,10 @@ describe('Triangulo', () => {
     expect(triangulo.classificar(a, b, c)).toBe(TipoTriangulo.INVALIDO);
   });
 
-  // 2.9
   test('2.9 - soma de 2 lados menor que o terceiro', () => {
     expect(triangulo.classificar(1, 2, 5)).toBe(TipoTriangulo.INVALIDO);
   });
 
-  // 2.10
   test.each([
     [1, 2, 5],
     [1, 5, 2],
@@ -83,7 +73,6 @@ describe('Triangulo', () => {
     expect(triangulo.classificar(a, b, c)).toBe(TipoTriangulo.INVALIDO);
   });
 
-  // 2.11
   test('2.11 - três valores iguais a zero', () => {
     expect(triangulo.classificar(0, 0, 0)).toBe(TipoTriangulo.INVALIDO);
   });

@@ -1,7 +1,7 @@
 {
   "name": "tdd-exercicios",
   "version": "1.0.0",
-  "description": "Exercícios práticos de TDD - LAB V 5BD FATEC/SJC",
+  "description": "",
   "scripts": {
     "build": "tsc --noEmit",
     "test": "jest",
